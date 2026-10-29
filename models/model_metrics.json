@@ -1,0 +1,70 @@
+{
+    "dataset": "synthetic_flights.csv",
+    "dataset_is_synthetic": true,
+    "total_valid_rows": 3500,
+    "training_rows": 2800,
+    "testing_rows": 700,
+    "target": "is_delayed",
+    "features": [
+        "airline",
+        "airline_code",
+        "origin",
+        "destination",
+        "weather_condition",
+        "departure_hour",
+        "scheduled_duration_min",
+        "distance_km",
+        "visibility_km",
+        "wind_speed_kmh"
+    ],
+    "selection_metric": "F1-score, then recall",
+    "selected_model": "Gradient Boosting",
+    "models": {
+        "Random Forest": {
+            "accuracy": 0.6271,
+            "precision": 0.4774,
+            "recall": 0.2913,
+            "f1_score": 0.3619,
+            "confusion_matrix": [
+                [
+                    365,
+                    81
+                ],
+                [
+                    180,
+                    74
+                ]
+            ]
+        },
+        "Gradient Boosting": {
+            "accuracy": 0.66,
+            "precision": 0.5667,
+            "recall": 0.2677,
+            "f1_score": 0.3636,
+            "confusion_matrix": [
+                [
+                    394,
+                    52
+                ],
+                [
+                    186,
+                    68
+                ]
+            ]
+        }
+    },
+    "accuracy": 0.66,
+    "precision": 0.5667,
+    "recall": 0.2677,
+    "f1_score": 0.3636,
+    "confusion_matrix": [
+        [
+            394,
+            52
+        ],
+        [
+            186,
+            68
+        ]
+    ]
+}
