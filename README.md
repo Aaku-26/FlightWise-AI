@@ -90,9 +90,9 @@ Once launched, open your web browser at:
 | Phase | Milestone | Status | Details |
 | :--- | :--- | :---: | :--- |
 | **Phase 1** | **Operational Intelligence & Heuristic Scorer** | ✅ Complete | Clean modular architecture, dark navy UI, Plotly charts, corridor map, synthetic dataset, heuristic risk engine. |
-| **Phase 2** | **Scikit-Learn ML Model Training** | 🔜 Upcoming | Ingest US Bureau of Transportation Statistics (BTS) data; train `RandomForestClassifier` and `GradientBoostingClassifier`; plug trained model into `prediction_engine.py`. |
-| **Phase 3** | **RAG Aviation Operations Assistant** | 🔜 Upcoming | Vector database (ChromaDB/FAISS) storing FAA NOTAMs, weather advisories, and ATC bulletins for conversational querying. |
-| **Phase 4** | **Explainable AI (SHAP)** | 🔜 Upcoming | Feature importance explainability for air traffic dispatchers. |
+| **Phase 2** | **Scikit-Learn ML Model Training** | ✅ Complete  | Trained the flight delay prediction model using Scikit-Learn and integrated it into prediction_engine.py. |
+| **Phase 3** | **RAG Aviation Operations Assistant** | ✅ Complete |Implemented aviation document retrieval and question-answering functionality using the project's RAG-related modules and aviation data chunks. |
+| **Phase 4** | **Explainable AI (SHAP)** | ✅ Complete |Integrated SHAP-based feature explanations and a feature-importance chart into the flight delay prediction dashboard. |
 
 ---
 
